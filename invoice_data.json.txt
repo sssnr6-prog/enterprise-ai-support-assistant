@@ -1,0 +1,62 @@
+[
+  {
+    "invoice_id": "INV001",
+    "customer": "ABC Corp",
+    "amount": 1500.00,
+    "status": "Paid"
+  },
+  {
+    "invoice_id": "INV002",
+    "customer": "XYZ Ltd",
+    "amount": 2500.50,
+    "status": "Pending"
+  },
+  {
+    "invoice_id": "INV003",
+    "customer": "PQR Inc",
+    "amount": 1200.75,
+    "status": "Paid"
+  },
+  {
+    "invoice_id": "INV004",
+    "customer": "Global Tech",
+    "amount": 3200.00,
+    "status": "Overdue"
+  },
+  {
+    "invoice_id": "INV005",
+    "customer": "Delta Solutions",
+    "amount": 850.25,
+    "status": "Paid"
+  },
+  {
+    "invoice_id": "INV006",
+    "customer": "Omega Industries",
+    "amount": 4500.00,
+    "status": "Pending"
+  },
+  {
+    "invoice_id": "INV007",
+    "customer": "Sunrise LLC",
+    "amount": 975.50,
+    "status": "Cancelled"
+  },
+  {
+    "invoice_id": "INV008",
+    "customer": "Tech Mahindra",
+    "amount": 1800.00,
+    "status": "Paid"
+  },
+  {
+    "invoice_id": "INV009",
+    "customer": "Bright Future",
+    "amount": 2750.75,
+    "status": "Pending"
+  },
+  {
+    "invoice_id": "INV010",
+    "customer": "NextGen Systems",
+    "amount": 5000.00,
+    "status": "Overdue"
+  }
+]
