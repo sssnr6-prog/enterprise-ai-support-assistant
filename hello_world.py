@@ -7,7 +7,7 @@ This program prints a welcome message to the console.
 def main():
     """Main function that prints Hello World message."""
     print("Hello, World!")
-    print("Welcome to your first Python program!")
+    print("Welcome to your first Python program! you")
     print("This program is ready to be deployed to GitHub.")
 
 if __name__ == "__main__":
