@@ -5,13 +5,7 @@ app = FastAPI()
 
 def load_data():
     with open("invoice_data.json", "r") as f:
-        return json.load(f)
-    
-def save_data(data):
-    with open("invoice_data.json", "w") as f:
-        json.dump(data, f, indent=4)
-
-
+        return json.load(f)    
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
@@ -24,12 +18,18 @@ def read_about():
 def read_invoices():
     data = load_data()
     return data
-    
-@app.post("/invoices")
-def create_invoice(invoice: dict):
+
+@app.get("/invoices/{invoice_id}")
+def read_invoice(invoice_id: str):
     data = load_data()
-    data.append(invoice)
-    save_data(data)  # ← Saves updated data to file
-    return {"status": "Invoice created", "invoice": invoice}
+    invoice = next((item for item in data if item["invoice_id"] == invoice_id), None)
+    if invoice:
+        return invoice
+    return {"error": "Invoice not found"}
+
+
+        
+    
+
 
 
